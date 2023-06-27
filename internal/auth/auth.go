@@ -9,7 +9,7 @@ import (
 // getapikey extracts an api key from
 // the headers of an http request
 
-//example
+// example
 // authorization: apikey {insert apikey here}
 func GetAPIKey(header http.Header) (string, error) {
 	val := header.Get("Authorization")
